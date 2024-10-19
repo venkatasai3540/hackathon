@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT-Based Water Supply Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Water Supply Management Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="#metrics">Dashboard</a></li>
+                <li><a href="#reports1">Reports</a></li>
+                <li><a href="#forecast1">Forecasting</a></li>
+                <li><a href="#Inferences">Inferences</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="metrics">
+            <h2>Real-Time Metrics</h2>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <h3>Average Water Flow</h3>
+                    <p id="water-flow">Loading...</p>
+                </div>
+                <div class="metric">
+                    <h3>Average Water Pressure</h3>
+                    <p id="water-pressure">Loading...</p>
+                </div>
+                <div class="metric">
+                    <h3>Water Quality</h3>
+                    <p id="water-quality (1-10)">Good(6-10)</p>
+                </div>
+                <div class="metric">
+                    <h3>Average Water Consumption</h3>
+                    <p id="water-consumption">500</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="forecast">
+            <h2>Predictive Analytics</h2>
+            <p>Water demand forecast based on historical data and seasonal trends:</p>
+            <div id="chart-container">
+                <canvas id="forecastChart"></canvas>
+            </div>
+        </section>
+
+        <section id="reports">
+            <h2>Reports and Analytics</h2>
+            <p>Detailed reports and analysis on system performance, water usage, and efficiency.</p>
+            <!-- Report details go here -->
+        </section>
+	<section id="reports1">
+		<div class="image-grid">
+        	<img src="img1.png" alt="Report 1"/>
+        	<img src="img2.png" alt="Report 2"/>
+        	<img src="img3.png" alt="Report 3"/>
+        	<img src="img4.png" alt="Report 4"/>
+        	<img src="img5.png" alt="Report 5"/>
+       		 <img src="img6.png" alt="Report 6"/>
+        	<img src="img7.png" alt="Report 7"/>
+        	<img src="img8.png" alt="Report 8"/>
+        	<img src="img9.png" alt="Report 9"/>
+    		</div>
+	</section>
+
+	<section id="forecast1">
+    		<img src="image.png" alt="Forecast Image" class="forecast-image">
+	</section>
+
+	<section id="Inferences">
+    <h2>Inferences from the Dataset</h2>
+    <ul class="inference-list">
+        <li><span class="number">1.</span> 994 Sensors are used for this project to collect the data.</li>
+        <li><span class="number">2.</span> Average Water Flow Rate is 104 liters.</li>
+        <li><span class="number">3.</span> Maximum and Minimum Water Flow Rates are: 199.94, 10.05 liters/minute.</li>
+        <li><span class="number">4.</span> Average Water Pressure: 300842.52 Pascals.</li>
+        <li><span class="number">5.</span> Minimum Water Pressure: 100050.22 Pascals.</li>
+        <li><span class="number">6.</span> Maximum Water Pressure: 499933.19 Pascals.</li>
+        <li><span class="number">7.</span> Demand for Water Quality 5 is High.</li>
+        <li><span class="number">8.</span> 2000+ Pipes are Having Water Leakage Problem.</li>
+        <li><span class="number">9.</span> Water Flow Rate is High if Leaks are not there.</li>
+        <li><span class="number">10.</span> Water Pressure Rate is High if there are no leaks.</li>
+        <li><span class="number">11.</span> Water Level is High if there are no leaks.</li>
+        <li><span class="number">12.</span> Almost 2500+ Pumps require Maintenance.</li>
+        <li><span class="number">13.</span> Almost 1200+ Pipes require Maintenance like Fixing the Leaks.</li>
+        <li><span class="number">14.</span> 2000+ Pipes Age is more than 50 years.</li>
+        <li><span class="number">15.</span> 2400+ Pumps are Inactive and They Need Maintenance.</li>
+        <li><span class="number">16.</span> The Demand for Water is High in Summer.</li>
+        <li><span class="number">17.</span> The Water Flow Rate is less in Summer, causing Water Scarcity.</li>
+    </ul>
+</section>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Water Management System. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
